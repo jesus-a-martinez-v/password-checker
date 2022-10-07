@@ -82,10 +82,10 @@ def check_password(password: str):
 
 def get_output_message(leaks):
     """
-    Creates a user friendly message based on the number of leaks found.
+    Creates a user-friendly message based on the number of leaks found.
     """
     if leaks > 0:
-        return red(f'🔴{leaks} leaks', ['bold', 'underlined']) + 'You should change it.'
+        return red(f'🔴{leaks} leaks.', ['bold', 'underlined']) + ' You should change it.'
 
     return green(f'✅ No leaks found!', ['bold', 'underlined'])
 
